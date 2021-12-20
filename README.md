@@ -13,10 +13,13 @@ Contents:
 3. Summary.
 <br>
 
+
 ## 1. Overview of the analysis.
 <br>
 
 The purpose of this analysis is, by using a heavily imbalanced dataset on risky and non risky credit card loans, build a Machine Learning Model (Classifier) that is able to deliver a good performance in recognizing a risky loand based on a number of featured that define the loan application.
+<br>
+
 
 ## 2. ML Algorithms Performance Results.
 <br>
@@ -30,3 +33,15 @@ It has been produced a total of X Classifiers with the following results on *Bal
 * BalancedRandomForestClassifier :: 78.85 % BAS, 3% Precision, 70% Recall
 * EasyEnsembleClassifier :: Not Working due to issues with the dependencies
 
+Below it can be seen the output of the classification_report_imbalanced for the <code>BalancedRandomForestClassifier</code> (as an example, as all reports can be seen on the notebooks):
+
+<img src="./imgs/Capture_BalancedRandomClassifier_clf_report_imbalanced.JPG">
+<br>
+
+
+## 3. ML Algorithms Performance Results.
+<br>
+
+The overall results of the machine learning models are not really good to provide a high level of detection of risky credits. The Type I error and Type errors produced are high for the purpose of detecting high-risk credit without declining really good and healthy credits.
+
+If to select one, it will be the one produced by <code>BalancedRandomForestClassifier</code> but again, its performance will be low to deploy it to a production environment.
